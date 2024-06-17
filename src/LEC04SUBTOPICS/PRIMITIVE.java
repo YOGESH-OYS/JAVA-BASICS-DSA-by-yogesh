@@ -18,5 +18,6 @@ public class PRIMITIVE {
         String name = "yogesh";
         System.out.println(name);
         System.out.println(num);
+        System.out.println(a1);
     }
 }
