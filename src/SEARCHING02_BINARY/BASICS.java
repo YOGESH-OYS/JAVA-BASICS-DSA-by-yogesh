@@ -1,6 +1,5 @@
 package SEARCHING02_BINARY;
 
-import java.util.Arrays;
 
 public class BASICS {
     public static void main(String[] args) {
@@ -12,6 +11,6 @@ public class BASICS {
     }
 
     static void binary(int[] arr , int length){
-
+        System.out.println("hello");
     }
 }
