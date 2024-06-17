@@ -16,5 +16,6 @@ public class PRIMITIVE {
         System.out.println("your age is "+ input.nextInt());
         //non-primitives(Types that can be break into any other form of data)
         String name = "yogesh";
+        System.out.println(name);
     }
 }
