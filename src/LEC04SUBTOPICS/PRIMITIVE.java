@@ -17,5 +17,6 @@ public class PRIMITIVE {
         //non-primitives(Types that can be break into any other form of data)
         String name = "yogesh";
         System.out.println(name);
+        System.out.println(num);
     }
 }
