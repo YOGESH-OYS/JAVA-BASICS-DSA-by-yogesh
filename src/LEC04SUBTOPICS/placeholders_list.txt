@@ -1,0 +1,13 @@
+Common Format Specifiers:
+%d - Integer (decimal)
+%o - Integer (octal)
+%x or %X - Integer (hexadecimal)
+%f - Floating-point number (decimal)
+%e or %E - Floating-point number in scientific notation
+%g or %G - Floating-point number in decimal or scientific notation (whichever is shorter)
+%a or %A - Floating-point number in hexadecimal
+%c - Character
+%s - String
+%b or %B - Boolean
+%h or %H - Hashcode
+%n - Platform-specific newline
