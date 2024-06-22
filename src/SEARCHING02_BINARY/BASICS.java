@@ -15,7 +15,7 @@ public class BASICS {
     static void binary(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
-        int len = (start + end) / 2;
+        int len = start + (end - start) / 2;
         int target = 11;
         System.out.println("end : " + end + ", start : " + start + ", length : " + len+", Target : "+target);
         loopterminator:
