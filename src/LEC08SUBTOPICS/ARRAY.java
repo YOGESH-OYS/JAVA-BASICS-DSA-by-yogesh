@@ -1,7 +1,6 @@
 package LEC08SUBTOPICS;
 
 import java.util.Arrays;
-
 import java.util.Scanner;
 
 public class ARRAY {
