@@ -1,3 +1,5 @@
+Ascii for space ' ' is 32
+
 Lowercase Letters:
 Character	ASCII Value
 a	        97
