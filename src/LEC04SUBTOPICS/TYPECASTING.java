@@ -7,7 +7,9 @@ public class TYPECASTING {
         System.out.println(a2);
     int a3 = 257;
     byte a4 = (byte) a3;
-        System.out.println(a4);//what happens here is byte only can handle -256 to 256 Therefore it returns 256%257 = 1 "remainder"
+        System.out.println(a4);
+        //what happens here is byte only can handle -128 to 127 Therefore after entering above 127 it will only answer you the greatest negative of the size "-128...-127"
+        //and also vice versa for -129 and above will result on "128...127"....reaching -256 and 256 is 0
     byte a5 = 10;
     byte a6 = 20;
     int a7 = a5*a6 + 2; // here byte actually exceeds the range , condition like this will be converted as per the way of the output by java itself (AUTOMATIC TYPE CONVERSION)
