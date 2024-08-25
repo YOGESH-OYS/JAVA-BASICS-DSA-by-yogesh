@@ -7,7 +7,7 @@ public class PRIMITIVE {
         //primitives
         int num = 89;
         char a1 = 'j';
-        float a2 = 28.67f;
+        float a2 = 28.676789f;
         double a3 = 28354.7535;//large decimal number
         long a4 = 1852483543;//large int value
         boolean check = true;//true or false
@@ -19,5 +19,8 @@ public class PRIMITIVE {
         System.out.println(name);
         System.out.println(num);
         System.out.println(a1);
+        System.out.println(a2);
+        System.out.format("%.3f",a2); //printing float value with 2 decimal or as per wish with round off
+
     }
 }
