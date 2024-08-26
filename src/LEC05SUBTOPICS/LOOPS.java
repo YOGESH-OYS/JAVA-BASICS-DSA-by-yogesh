@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class LOOPS {
     public static void main(String[] args) {
-        //when you don't know how many iteration it will be use while
+        //when you don't know how many iteration it will be use while because it only runs when the condition is true
         int i = 0;
         while (i<=5){
             System.out.println(i);
@@ -17,7 +17,7 @@ public class LOOPS {
             System.out.println(i1);
         }
 
-        //do while
+        //do while (same as the while but the do will execute first before the while condition)
 
         int i2 = 0;
         do {
@@ -64,7 +64,7 @@ public class LOOPS {
         int a2 = 1;
         System.out.println(a1);
         System.out.println(a2);
-        int result = 0;
+        int result;
         for (int i4 = 2 ; i4 < limit ; i4++ ){
             result = a1 + a2 ;
             a1 = a2;
