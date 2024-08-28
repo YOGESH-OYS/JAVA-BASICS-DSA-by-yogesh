@@ -10,6 +10,7 @@ public class SCOPE {
         }
         System.out.println(a);
         enter();//won't change another function
+        enter(a);
         System.out.println(a);
     }
     //there are 2 variables in 2 different function but same name both cant access each other function
@@ -17,6 +18,11 @@ public class SCOPE {
     static void enter(){
         int a = 20;
     //Changes done in this function are stays inside this function
+        System.out.println(a);
+    }
+    static void enter(int s){
+        int a = s+10;
+        //Changes done in this function are stays inside this function
         System.out.println(a);
     }
 }
