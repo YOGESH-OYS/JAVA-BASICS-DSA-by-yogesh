@@ -20,7 +20,8 @@ public class PRIMITIVE {
         System.out.println(num);
         System.out.println(a1);
         System.out.println(a2);
-        System.out.format("%.3f",a2); //printing float value with 2 decimal or as per wish with round off
+        System.out.format("%.2f",a2);
+        System.out.printf("\n%.2f",a2); //printing float value with 2 decimal or as per wish with round off
 
     }
 }

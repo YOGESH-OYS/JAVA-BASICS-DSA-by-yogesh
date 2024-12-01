@@ -57,9 +57,10 @@ public class SWITCHCASE {
             case 6 , 7 -> System.out.println("week end");
         }
 
+        out:
         while (true) {
         Scanner CHAR = new Scanner(System.in);
-        System.out.print("enter 1 for dpt enter 2 for class : ");
+        System.out.print("enter 1 for dpt enter 2 for class : (for termination enter 0) ");
         int i7 = CHAR.nextInt();
             switch (i7) {
                 case 1 -> {
@@ -80,6 +81,10 @@ public class SWITCHCASE {
                         case 1 -> System.out.println("A class");
                         case 2 -> System.out.println("B class");
                     }
+                }
+
+                case 0 ->{
+                    break out;
                 }
             }
         }

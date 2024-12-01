@@ -6,7 +6,7 @@ public class TYPECASTING {
     int a2 = (int) a1;
         //converts float into int
         System.out.println(a2);
-    int a3 = 257;
+    int a3 = 129;
     byte a4 = (byte) a3;
         System.out.println(a4);
         //what happens here is byte only can handle -128 to 127 Therefore after entering above 127 it will only answer you the greatest negative of the size "-128...-127"

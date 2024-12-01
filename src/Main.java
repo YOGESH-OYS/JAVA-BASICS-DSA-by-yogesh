@@ -1,5 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hell world");
+        int[] n = {2,3,1,1,4};
+        int i = 0;
+        int d = 0;
+
     }
+}
+class Solution {
+   public boolean j(int[] nums){
+
+       return false;
+   }
 }
