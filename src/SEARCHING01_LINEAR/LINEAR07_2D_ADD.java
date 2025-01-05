@@ -14,9 +14,9 @@ public class LINEAR07_2D_ADD {
 class Solution {
     public int maximumWealth(int[][] accounts) {
         int result2 = 0 ;
-        for (int[] account : accounts) {
+        for (int[] row : accounts) {
             int result1 = 0;
-            for (int col : account) {
+            for (int col : row) {
                 result1 += col;
                 if (result1 > result2) {
                     result2 = result1;

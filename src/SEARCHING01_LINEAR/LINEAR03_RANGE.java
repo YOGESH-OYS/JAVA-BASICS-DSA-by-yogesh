@@ -9,11 +9,10 @@ public class LINEAR03_RANGE {
             //FOR STRING
 
             Scanner value = new Scanner(System.in);
-            Scanner start = new Scanner(System.in);
             System.out.println("Enter the starting and ending range with space : ");
-            int srt = start.nextInt();
-            int end = start.nextInt();
-            System.out.println("Enter the element to be searched in the array [ Exit enter Esc ] : ");
+            int srt = value.nextInt();
+            int end = value.nextInt();
+            System.out.println("Enter the element to be searched inside the array range [ Exit enter Esc ] : ");
             String search = value.next();
             if (search.equals("Esc")) break;
             String str = "yogesh";
@@ -29,7 +28,7 @@ public class LINEAR03_RANGE {
             int srt = start.nextInt();
             int end = start.nextInt();
             Scanner value = new Scanner(System.in);
-            System.out.println("Enter the value to be searched in the array [ Exit enter 101 ] : ");
+            System.out.println("Enter the value to be searched inside the array range [ Exit enter 101 ] : ");
             int search = value.nextInt();
             if (search == 101) break;
             int[] arr = {1, 3, 5, 7, 9, -5};

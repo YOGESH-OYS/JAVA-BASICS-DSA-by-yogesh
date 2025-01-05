@@ -7,6 +7,8 @@ public class ARR_FUNCTION {
     public static void main(String[] args) {
         int[] arr = new int[5];
         System.out.println(Arrays.toString(arr));
+//        ARR_FUNCTION j = new ARR_FUNCTION();
+//        j.array(arr);                        THE STATIC METHOD IS INDEPENDENT OF OBJECT , SO IT WILL GIVE WARNING BUT WORKS SAME AS array(arr);
         array(arr);
         System.out.println("next modify");
         modify(arr);

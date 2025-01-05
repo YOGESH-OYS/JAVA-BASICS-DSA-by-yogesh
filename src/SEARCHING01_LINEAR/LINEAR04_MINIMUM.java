@@ -7,6 +7,7 @@ public class LINEAR04_MINIMUM {
         int[] arr = {6 ,4 , 3 , 7 , 9 , 1 , 8 , 5 , 2 };
         System.out.println(minimum(arr));
         System.out.println(minimum01(arr));
+        System.out.println(maximum(arr));
     }
 
     static int minimum(int[] array){
@@ -22,5 +23,15 @@ public class LINEAR04_MINIMUM {
             }
         }
     return answer;
+    }
+
+    static int maximum(int[] array){
+        int answer = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if(array[i] > answer){
+                answer=array[i];
+            }
+        }
+        return answer;
     }
 }

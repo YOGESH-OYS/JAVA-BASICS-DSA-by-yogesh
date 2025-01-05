@@ -13,7 +13,8 @@ public class ARRAY {
             arr[i]= in.nextInt();
             //System.out.print(arr[i] + " ");
         }
-        for (int num : arr){
+        for (int num : arr){  // NUM REPRESENT THE ELEMENT OF THE ARRAY
+            // FOR EVERY ELEMENT {NUM} IN ARRAY PRINT ELEMENT
             System.out.print(num + " ");//" " Gives space between values
         }
         System.out.println(Arrays.toString(arr));//BEST OF ALL 3 METHOD

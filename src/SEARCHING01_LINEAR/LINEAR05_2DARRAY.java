@@ -11,13 +11,14 @@ public class LINEAR05_2DARRAY {
         };
         int target = 40;
         search(arr , target);
-
+        Row_maximum(arr);
         System.out.println(maximum(arr));
 
         Scanner r1 = new Scanner(System.in); //array row size
         System.out.println("Enter the no of row : ");
         int[][] array = new int[r1.nextInt()][];
         element_entry(array);
+        Row_maximum(array);
     }
 
 static void element_entry(int[][] array){
@@ -61,5 +62,26 @@ static void element_entry(int[][] array){
             }
         }
         return answer;
+    }
+
+    static void Row_maximum(int[][] array){
+        // length will be 3 since I need every maximum element if every row wise
+        int[] max_elements = new int[array.length];
+        int max_element_index = 0;
+        for(int[] a : array){
+            int max = 0;
+            for (int i : a) {
+                if (i > max) {
+                    max = i;
+                }
+            }
+            max_elements[max_element_index] = max;
+            max_element_index++;
+        }
+
+        for (int i = 0; i < max_elements.length; i++) {
+            System.out.println("the maximum value of "+i+" rows is "+max_elements[i]);
+        }
+
     }
 }

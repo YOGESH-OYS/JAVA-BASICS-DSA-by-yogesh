@@ -17,12 +17,13 @@ public class LINEAR02_STRING {
         }
     }
     static String st_search(String var , String tosearch){
-        if (var.isEmpty()) System.out.println("is empty");
+        if (var.isEmpty())  return "is empty";
         for (int i = 0; i < var.length(); i++) {
             if (tosearch.charAt(0) == var.charAt(i)){
                 return ("the element entered index is "+ i );
             }
         }
+
         return ("YOU ENTERED WRONG ELEMENT");
     }
 }

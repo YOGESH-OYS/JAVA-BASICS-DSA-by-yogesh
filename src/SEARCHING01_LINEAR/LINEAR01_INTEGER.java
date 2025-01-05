@@ -13,7 +13,7 @@ public class LINEAR01_INTEGER {
             int search = value.nextInt();
             if (search == 101) break;
             int[] arr = {1, 3, 5, 7, 9, -5};
-            if (search(arr, search) < 0) System.out.println("no value " + search(arr, search));
+            if (search(arr, search) == -1) System.out.println("no value " + search);
             else System.out.println("The value that you searched for is in the index " + search(arr, search));
         }
     }

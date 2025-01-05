@@ -19,7 +19,12 @@ public class ARRAYLIST {
 
         //both are declaration
 
-        ArrayList<ArrayList<Integer>> name = new ArrayList<>();  //MULTI DIMENTIONAL
+        ArrayList<ArrayList<Integer>> name = new ArrayList<>();
+        //MULTI DIMENTIONAL
+
+        System.out.println(name);
+
+
         for (int i = 0; i < 3; i++) {
             name.add(new ArrayList<>());
         }

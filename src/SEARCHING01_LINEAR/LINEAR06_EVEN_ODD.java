@@ -2,36 +2,37 @@ package SEARCHING01_LINEAR;
 
 public class LINEAR06_EVEN_ODD {
     public static void main(String[] args) {
-        int[] arr = {123561, 32, 5123, 735, 4576 , 96 , -3654};
-        System.out.println(even(arr));
+        int[] arr = {-123561, 32, 5123, 735, 4576 , 96 , -3654};
+        even(arr);
 
         //Second method
 
         System.out.println(nam(arr));
 
     }
-    static int even (int[] array){
-        int length = 0 ;
-        int l = 0;
-        String result ;
-        for (int i = 0; i < array.length; i++) {
-            if(array[i] < 0) {
-                String check = String.valueOf(array[i] * -1);
-                length = check.length();
+    static void even (int[] array){
+        int length;
+        for (int i : array) {
+            if(i < 0) {
+                length = String.valueOf(i * -1).length(); //converting element into a string and checking length
             }
             else {
-                String check = String.valueOf(array[i]);
-                length = check.length();
+                length = String.valueOf(i).length();
             }
-                if (length % 2 == 0) {
-                    l++;
-                    result = String.valueOf(array[i]);
-                    System.out.println(result + " contains " + String.valueOf(array[i]).length() + " digits (even number of digits).");
-                }
-            else  System.out.println(array[i] +" contains "+ String.valueOf(array[i]).length() + " digits (odd number of digits).");
+
+
+            if (length % 2 == 0) {
+                System.out.println( i + " contains " + length + " digits (even number of digits).");
+            }
+            else {
+                System.out.println( i +" contains "+ String.valueOf(i).length() + " digits (odd number of digits).");
+            }
         }
-        return l;
     }
+
+
+
+
     static int nam(int[] num){
         int count = 0 ;
         for (int from = 0; from < num.length; from++) {
