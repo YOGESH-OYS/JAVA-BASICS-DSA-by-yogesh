@@ -2,11 +2,13 @@ package SEARCHING02_BINARY;
 
 import java.util.Arrays;
 
+
+//ASSCENDING ORDER
 public class BINARY01_MIDDLE_ELEM {
     public static void main(String[] args) {
-        int[] arr = {1, 3, 5, 2, 7, 9, 10, 8, 4};
+        int[] arr = {1, 2, 3};
         Arrays.sort(arr);
-        int target = 11;
+        int target = 1;
         System.out.println(greater(arr, target));
     }
 
@@ -22,7 +24,6 @@ public class BINARY01_MIDDLE_ELEM {
             } else {
                 return mid;
             }
-
         }
         return -1;
     }
